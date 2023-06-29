@@ -2,9 +2,7 @@ package com.goit.hibernate.app.service;
 
 import com.goit.hibernate.app.configuration.Environment;
 import com.goit.hibernate.app.configuration.hibernate.Datasource;
-import com.goit.hibernate.app.entity.Client;
 import com.goit.hibernate.app.entity.Ticket;
-import com.goit.hibernate.app.repository.ClientEntityRepository;
 import com.goit.hibernate.app.repository.IncorrectDataException;
 import com.goit.hibernate.app.repository.TicketEntityRepository;
 

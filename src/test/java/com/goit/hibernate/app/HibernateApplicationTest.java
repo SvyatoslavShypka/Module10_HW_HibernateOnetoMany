@@ -18,9 +18,6 @@ public class HibernateApplicationTest {
 
     protected Environment environment = Environment.load();;
     protected Datasource datasource = new Datasource(environment);
-//    protected ClientCrudService clientCrudService;
-//    protected PlanetCrudService planetCrudService;
-//    protected TicketCrudService ticketCrudService;
     protected ClientCrudService clientCrudService = new ClientCrudService(environment,
         new ClientEntityRepository(datasource));
     protected PlanetCrudService planetCrudService = new PlanetCrudService(environment,
@@ -28,19 +25,4 @@ public class HibernateApplicationTest {
     protected TicketCrudService ticketCrudService = new TicketCrudService(environment,
             new TicketEntityRepository(datasource));
 
-
-    @BeforeEach
-    public void beforeEach() {
-//        environment = Environment.load();
-//        datasource = new Datasource(environment);
-//        LoggingConfiguration.setup(environment);
-        log.info("BeforeEachMain");
-
-    }
-
-    @AfterEach
-    void afterEach() {
-        log.info("afterEachMain");
-
-    }
 }

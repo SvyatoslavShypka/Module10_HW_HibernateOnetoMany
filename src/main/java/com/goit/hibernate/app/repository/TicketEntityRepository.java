@@ -1,9 +1,6 @@
 package com.goit.hibernate.app.repository;
 
 import com.goit.hibernate.app.configuration.hibernate.Datasource;
-import com.goit.hibernate.app.configuration.hibernate.HibernateAbstractRepository;
-import com.goit.hibernate.app.entity.Client;
-import com.goit.hibernate.app.entity.Planet;
 import com.goit.hibernate.app.entity.Ticket;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;

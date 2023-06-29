@@ -3,10 +3,8 @@ package com.goit.hibernate.app.test.utils;
 import com.goit.hibernate.app.entity.Client;
 import com.goit.hibernate.app.entity.Planet;
 import com.goit.hibernate.app.entity.Ticket;
-import com.goit.hibernate.app.service.ClientCrudService;
 
 import java.sql.Timestamp;
-import java.util.List;
 
 public final class TestUtils {
 
