@@ -2,6 +2,11 @@ package com.goit.hibernate.app.test.utils;
 
 import com.goit.hibernate.app.entity.Client;
 import com.goit.hibernate.app.entity.Planet;
+import com.goit.hibernate.app.entity.Ticket;
+import com.goit.hibernate.app.service.ClientCrudService;
+
+import java.sql.Timestamp;
+import java.util.List;
 
 public final class TestUtils {
 
@@ -14,7 +19,15 @@ public final class TestUtils {
     public static Planet createTestPlanet() {
         Planet planet = new Planet();
         planet.setId("SOLAR100");
-        planet.setName("Test Client");
+        planet.setName("Test Planet");
         return planet;
+    }
+
+    public static Ticket createTestTicket() {
+        Ticket ticket = new Ticket();
+        ticket.setCreatedAt(Timestamp.valueOf("2030-01-01 10:00:00"));
+
+
+        return ticket;
     }
 }

@@ -1,16 +1,6 @@
 package com.goit.hibernate.app.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Id;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.MapsId;
-
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -39,12 +29,10 @@ public class Ticket {
         private Client client;
 
         @OneToOne
-        @MapsId
-        @JoinColumn(name = "planet_id")
+        @JoinColumn(name = "from_planet_id", nullable = false)
         private Planet planetFrom;
 
         @OneToOne
-        @MapsId
-        @JoinColumn(name = "planet_id")
+        @JoinColumn(name = "to_planet_id", nullable = false)
         private Planet planetTo;
 }

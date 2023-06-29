@@ -17,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 class PlanetCrudServiceTest extends HibernateApplicationTest {
 
+/*
     private PlanetCrudService planetCrudService;
 
     @BeforeEach
@@ -24,13 +25,14 @@ class PlanetCrudServiceTest extends HibernateApplicationTest {
         planetCrudService = new PlanetCrudService(environment,
                 new PlanetEntityRepository(datasource));
     }
+*/
 
     @Test
     @DisplayName("Check if planets exist when findAll() invoked")
     void findAll() {
 
         //Given
-        final int expectedSize = 3;
+        final int expectedSize = 5;
 
         //When
         List<Planet> all = planetCrudService.findAll();
